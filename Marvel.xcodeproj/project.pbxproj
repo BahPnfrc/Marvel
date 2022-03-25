@@ -16,6 +16,8 @@
 		0BFF2D1527EE433600814857 /* MarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D1427EE433600814857 /* MarvelTests.swift */; };
 		0BFF2D1F27EE433600814857 /* MarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D1E27EE433600814857 /* MarvelUITests.swift */; };
 		0BFF2D2127EE433600814857 /* MarvelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D2027EE433600814857 /* MarvelUITestsLaunchTests.swift */; };
+		0BFF2D3327EE46E800814857 /* SystemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D3227EE46E800814857 /* SystemImage.swift */; };
+		0BFF2D3727EE49BA00814857 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D3627EE49BA00814857 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		0BFF2D1A27EE433600814857 /* MarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BFF2D1E27EE433600814857 /* MarvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelUITests.swift; sourceTree = "<group>"; };
 		0BFF2D2027EE433600814857 /* MarvelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0BFF2D3227EE46E800814857 /* SystemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemImage.swift; sourceTree = "<group>"; };
+		0BFF2D3627EE49BA00814857 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 			children = (
 				0BFF2D0827EE433500814857 /* LaunchScreen.storyboard */,
 				0BFF2CFE27EE433500814857 /* ViewController.swift */,
+				0BFF2D3827EE49C300814857 /* Tabs */,
+				0BFF2D3427EE474D00814857 /* Layout */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,6 +171,22 @@
 				0BFF2D0327EE433500814857 /* Marvel.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		0BFF2D3427EE474D00814857 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				0BFF2D3227EE46E800814857 /* SystemImage.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		0BFF2D3827EE49C300814857 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				0BFF2D3627EE49BA00814857 /* MainTabBarController.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +319,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BFF2D3327EE46E800814857 /* SystemImage.swift in Sources */,
 				0BFF2CFF27EE433500814857 /* ViewController.swift in Sources */,
+				0BFF2D3727EE49BA00814857 /* MainTabBarController.swift in Sources */,
 				0BFF2CFB27EE433500814857 /* AppDelegate.swift in Sources */,
 				0BFF2D0527EE433500814857 /* Marvel.xcdatamodeld in Sources */,
 				0BFF2CFD27EE433500814857 /* SceneDelegate.swift in Sources */,
