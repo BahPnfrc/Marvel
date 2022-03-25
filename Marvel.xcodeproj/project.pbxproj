@@ -18,6 +18,7 @@
 		0BFF2D2127EE433600814857 /* MarvelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D2027EE433600814857 /* MarvelUITestsLaunchTests.swift */; };
 		0BFF2D3327EE46E800814857 /* SystemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D3227EE46E800814857 /* SystemImage.swift */; };
 		0BFF2D3727EE49BA00814857 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D3627EE49BA00814857 /* MainTabBarController.swift */; };
+		0BFF2D3D27EE7FC000814857 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D3C27EE7FC000814857 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		0BFF2D2027EE433600814857 /* MarvelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0BFF2D3227EE46E800814857 /* SystemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemImage.swift; sourceTree = "<group>"; };
 		0BFF2D3627EE49BA00814857 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		0BFF2D3C27EE7FC000814857 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				0BFF2D0327EE433500814857 /* Marvel.xcdatamodeld */,
+				0BFF2D3C27EE7FC000814857 /* CoreDataStack.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BFF2D3D27EE7FC000814857 /* CoreDataStack.swift in Sources */,
 				0BFF2D3327EE46E800814857 /* SystemImage.swift in Sources */,
 				0BFF2CFF27EE433500814857 /* ViewController.swift in Sources */,
 				0BFF2D3727EE49BA00814857 /* MainTabBarController.swift in Sources */,
