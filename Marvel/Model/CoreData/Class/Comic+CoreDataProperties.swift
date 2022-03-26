@@ -16,13 +16,14 @@ extension Comic {
         return NSFetchRequest<Comic>(entityName: "Comic")
     }
 
-    @NSManaged public var format: String?
-    @NSManaged public var id: Int64
+    @NSManaged public var timeStamp: Date
     @NSManaged public var isFavorite: Bool
+    
+    @NSManaged public var id: Int64
+    @NSManaged public var format: String?
     @NSManaged public var modified: Date?
     @NSManaged public var pageCount: Int64
     @NSManaged public var thumbnail: Data?
-    @NSManaged public var timeStamp: Date?
     @NSManaged public var title: String?
     @NSManaged public var characters: NSOrderedSet?
     @NSManaged public var comicDates: NSOrderedSet?

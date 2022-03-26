@@ -2,7 +2,7 @@
 //  ComicDate+CoreDataProperties.swift
 //  Marvel
 //
-//  Created by Pierre-Alexandre on 26/03/2022.
+//  Created by Pierre-Alexandre on 27/03/2022.
 //
 //
 

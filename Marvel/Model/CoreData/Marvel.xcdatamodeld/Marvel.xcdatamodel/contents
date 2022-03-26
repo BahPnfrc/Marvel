@@ -2,7 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E230" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Character" representedClassName="Character" syncable="YES">
         <attribute name="name" attributeType="String"/>
-        <attribute name="resourceURI" optional="YES" attributeType="String"/>
+        <attribute name="resourceURL" optional="YES" attributeType="String"/>
         <attribute name="role" optional="YES" attributeType="String"/>
         <relationship name="comics" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Comic" inverseName="characters" inverseEntity="Comic"/>
         <uniquenessConstraints>
@@ -32,13 +32,13 @@
         </uniquenessConstraints>
     </entity>
     <entity name="ComicDate" representedClassName="ComicDate" syncable="YES">
-        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="type" optional="YES" attributeType="String"/>
         <relationship name="comic" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Comic" inverseName="comicDates" inverseEntity="Comic"/>
     </entity>
     <entity name="Creator" representedClassName="Creator" syncable="YES">
         <attribute name="name" attributeType="String"/>
-        <attribute name="resourceURI" optional="YES" attributeType="String"/>
+        <attribute name="resourceURL" optional="YES" attributeType="String"/>
         <attribute name="role" optional="YES" attributeType="String"/>
         <relationship name="comics" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Comic" inverseName="creators" inverseEntity="Comic"/>
         <uniquenessConstraints>

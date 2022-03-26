@@ -17,7 +17,7 @@ extension Url {
     }
 
     @NSManaged public var type: String?
-    @NSManaged public var url: String?
+    @NSManaged public var url: String
     @NSManaged public var comic: Comic?
 
 }

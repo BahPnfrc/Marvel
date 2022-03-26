@@ -17,7 +17,7 @@ extension TextObject {
     }
 
     @NSManaged public var language: String?
-    @NSManaged public var text: String?
+    @NSManaged public var text: String
     @NSManaged public var type: String?
     @NSManaged public var comic: Comic?
 

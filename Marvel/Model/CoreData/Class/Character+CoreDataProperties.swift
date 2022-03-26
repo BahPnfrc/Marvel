@@ -16,8 +16,8 @@ extension Character {
         return NSFetchRequest<Character>(entityName: "Character")
     }
 
-    @NSManaged public var name: String?
-    @NSManaged public var resourceURI: String?
+    @NSManaged public var name: String
+    @NSManaged public var resourceURL: String?
     @NSManaged public var role: String?
     @NSManaged public var comics: NSOrderedSet?
 
