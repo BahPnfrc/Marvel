@@ -19,6 +19,18 @@
 		0BFF2D3327EE46E800814857 /* SystemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D3227EE46E800814857 /* SystemImage.swift */; };
 		0BFF2D3727EE49BA00814857 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D3627EE49BA00814857 /* MainTabBarController.swift */; };
 		0BFF2D3D27EE7FC000814857 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D3C27EE7FC000814857 /* CoreDataStack.swift */; };
+		0BFF2D8D27EF099B00814857 /* Character+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D8B27EF099B00814857 /* Character+CoreDataClass.swift */; };
+		0BFF2D8E27EF099B00814857 /* Character+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D8C27EF099B00814857 /* Character+CoreDataProperties.swift */; };
+		0BFF2D9927EF09FD00814857 /* Creator+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D8F27EF09FD00814857 /* Creator+CoreDataClass.swift */; };
+		0BFF2D9A27EF09FD00814857 /* Creator+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D9027EF09FD00814857 /* Creator+CoreDataProperties.swift */; };
+		0BFF2D9B27EF09FD00814857 /* TextObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D9127EF09FD00814857 /* TextObject+CoreDataClass.swift */; };
+		0BFF2D9C27EF09FD00814857 /* TextObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D9227EF09FD00814857 /* TextObject+CoreDataProperties.swift */; };
+		0BFF2D9D27EF09FD00814857 /* Url+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D9327EF09FD00814857 /* Url+CoreDataClass.swift */; };
+		0BFF2D9E27EF09FD00814857 /* Url+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D9427EF09FD00814857 /* Url+CoreDataProperties.swift */; };
+		0BFF2D9F27EF09FD00814857 /* ComicDate+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D9527EF09FD00814857 /* ComicDate+CoreDataClass.swift */; };
+		0BFF2DA027EF09FD00814857 /* ComicDate+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D9627EF09FD00814857 /* ComicDate+CoreDataProperties.swift */; };
+		0BFF2DA127EF09FD00814857 /* Comic+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D9727EF09FD00814857 /* Comic+CoreDataClass.swift */; };
+		0BFF2DA227EF09FD00814857 /* Comic+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF2D9827EF09FD00814857 /* Comic+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +67,18 @@
 		0BFF2D3227EE46E800814857 /* SystemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemImage.swift; sourceTree = "<group>"; };
 		0BFF2D3627EE49BA00814857 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		0BFF2D3C27EE7FC000814857 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		0BFF2D8B27EF099B00814857 /* Character+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0BFF2D8C27EF099B00814857 /* Character+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0BFF2D8F27EF09FD00814857 /* Creator+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Creator+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0BFF2D9027EF09FD00814857 /* Creator+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Creator+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0BFF2D9127EF09FD00814857 /* TextObject+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextObject+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0BFF2D9227EF09FD00814857 /* TextObject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0BFF2D9327EF09FD00814857 /* Url+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Url+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0BFF2D9427EF09FD00814857 /* Url+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Url+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0BFF2D9527EF09FD00814857 /* ComicDate+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ComicDate+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0BFF2D9627EF09FD00814857 /* ComicDate+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ComicDate+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0BFF2D9727EF09FD00814857 /* Comic+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comic+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0BFF2D9827EF09FD00814857 /* Comic+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comic+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +196,7 @@
 			children = (
 				0BFF2D0327EE433500814857 /* Marvel.xcdatamodeld */,
 				0BFF2D3C27EE7FC000814857 /* CoreDataStack.swift */,
+				0BFF2D8A27EF096E00814857 /* Class */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -190,6 +215,25 @@
 				0BFF2D3627EE49BA00814857 /* MainTabBarController.swift */,
 			);
 			path = Tabs;
+			sourceTree = "<group>";
+		};
+		0BFF2D8A27EF096E00814857 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				0BFF2D8F27EF09FD00814857 /* Creator+CoreDataClass.swift */,
+				0BFF2D9027EF09FD00814857 /* Creator+CoreDataProperties.swift */,
+				0BFF2D9127EF09FD00814857 /* TextObject+CoreDataClass.swift */,
+				0BFF2D9227EF09FD00814857 /* TextObject+CoreDataProperties.swift */,
+				0BFF2D9327EF09FD00814857 /* Url+CoreDataClass.swift */,
+				0BFF2D9427EF09FD00814857 /* Url+CoreDataProperties.swift */,
+				0BFF2D9527EF09FD00814857 /* ComicDate+CoreDataClass.swift */,
+				0BFF2D9627EF09FD00814857 /* ComicDate+CoreDataProperties.swift */,
+				0BFF2D9727EF09FD00814857 /* Comic+CoreDataClass.swift */,
+				0BFF2D9827EF09FD00814857 /* Comic+CoreDataProperties.swift */,
+				0BFF2D8B27EF099B00814857 /* Character+CoreDataClass.swift */,
+				0BFF2D8C27EF099B00814857 /* Character+CoreDataProperties.swift */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,11 +367,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BFF2D3D27EE7FC000814857 /* CoreDataStack.swift in Sources */,
+				0BFF2D8D27EF099B00814857 /* Character+CoreDataClass.swift in Sources */,
 				0BFF2D3327EE46E800814857 /* SystemImage.swift in Sources */,
+				0BFF2DA127EF09FD00814857 /* Comic+CoreDataClass.swift in Sources */,
 				0BFF2CFF27EE433500814857 /* ViewController.swift in Sources */,
+				0BFF2D9C27EF09FD00814857 /* TextObject+CoreDataProperties.swift in Sources */,
+				0BFF2D9F27EF09FD00814857 /* ComicDate+CoreDataClass.swift in Sources */,
 				0BFF2D3727EE49BA00814857 /* MainTabBarController.swift in Sources */,
+				0BFF2D9B27EF09FD00814857 /* TextObject+CoreDataClass.swift in Sources */,
+				0BFF2DA227EF09FD00814857 /* Comic+CoreDataProperties.swift in Sources */,
+				0BFF2DA027EF09FD00814857 /* ComicDate+CoreDataProperties.swift in Sources */,
+				0BFF2D9E27EF09FD00814857 /* Url+CoreDataProperties.swift in Sources */,
+				0BFF2D8E27EF099B00814857 /* Character+CoreDataProperties.swift in Sources */,
 				0BFF2CFB27EE433500814857 /* AppDelegate.swift in Sources */,
+				0BFF2D9D27EF09FD00814857 /* Url+CoreDataClass.swift in Sources */,
 				0BFF2D0527EE433500814857 /* Marvel.xcdatamodeld in Sources */,
+				0BFF2D9A27EF09FD00814857 /* Creator+CoreDataProperties.swift in Sources */,
+				0BFF2D9927EF09FD00814857 /* Creator+CoreDataClass.swift in Sources */,
 				0BFF2CFD27EE433500814857 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
