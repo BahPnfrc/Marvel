@@ -1,4 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E230" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Character" representedClassName="Character" syncable="YES">
+        <attribute name="name" attributeType="String"/>
+        <attribute name="resourceURI" optional="YES" attributeType="String"/>
+        <attribute name="role" optional="YES" attributeType="String"/>
+        <relationship name="comics" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Comic" inverseName="characters" inverseEntity="Comic"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Comic" representedClassName="Comic" syncable="YES">
+        <attribute name="format" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isFavorite" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="modified" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="pageCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="thumbnail" optional="YES" attributeType="Binary"/>
+        <attribute name="timeStamp" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="characters" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Character" inverseName="comics" inverseEntity="Character"/>
+        <relationship name="comicDates" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="ComicDate" inverseName="comic" inverseEntity="ComicDate"/>
+        <relationship name="creators" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Creator" inverseName="comics" inverseEntity="Creator"/>
+        <relationship name="textObjects" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="TextObject" inverseName="comic" inverseEntity="TextObject"/>
+        <relationship name="urls" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Url" inverseName="comic" inverseEntity="Url"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="ComicDate" representedClassName="ComicDate" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="comic" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Comic" inverseName="comicDates" inverseEntity="Comic"/>
+    </entity>
+    <entity name="Creator" representedClassName="Creator" syncable="YES">
+        <attribute name="name" attributeType="String"/>
+        <attribute name="resourceURI" optional="YES" attributeType="String"/>
+        <attribute name="role" optional="YES" attributeType="String"/>
+        <relationship name="comics" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Comic" inverseName="creators" inverseEntity="Comic"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="TextObject" representedClassName="TextObject" syncable="YES">
+        <attribute name="language" optional="YES" attributeType="String"/>
+        <attribute name="text" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="comic" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Comic" inverseName="textObjects" inverseEntity="Comic"/>
+    </entity>
+    <entity name="Url" representedClassName="Url" syncable="YES">
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="url" attributeType="String"/>
+        <relationship name="comic" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Comic" inverseName="urls" inverseEntity="Comic"/>
+    </entity>
+    <elements>
+        <element name="Character" positionX="-616.5" positionY="-558.58203125" width="128" height="89"/>
+        <element name="Comic" positionX="-451.62109375" positionY="-482.43359375" width="128" height="224"/>
+        <element name="ComicDate" positionX="-755.5703125" positionY="-392.78125" width="128" height="74"/>
+        <element name="Creator" positionX="-691.2265625" positionY="-134.1171875" width="128" height="89"/>
+        <element name="TextObject" positionX="-203.734375" positionY="-347.4140625" width="128" height="89"/>
+        <element name="Url" positionX="-250.50390625" positionY="-169.28125" width="128" height="74"/>
+    </elements>
 </model>
